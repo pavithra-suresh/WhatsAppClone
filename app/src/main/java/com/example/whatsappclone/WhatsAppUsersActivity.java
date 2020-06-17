@@ -31,6 +31,8 @@ public class WhatsAppUsersActivity extends AppCompatActivity implements AdapterV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_whats_app_users);
 
+        setTitle("Users");
+
         final ListView listView = findViewById(R.id.listViwe);
         listView.setOnItemClickListener(this);
         waUsers = new ArrayList<>();

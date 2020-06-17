@@ -33,6 +33,8 @@ public class WhatsAppChatActivity extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_whats_app_chat);
 
+        setTitle("Chats");
+
         selectedUser = getIntent().getStringExtra("selectedUser");
         FancyToast.makeText(this, "Chat with " + selectedUser + " Now!!!", Toast.LENGTH_SHORT, FancyToast.INFO, true).show();
 
@@ -82,7 +84,6 @@ public class WhatsAppChatActivity extends AppCompatActivity implements View.OnCl
                             chatsList.add(waMessage);
                         }
                         adapter.notifyDataSetChanged();
-
 
                     }
                 }
