@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WhatsAppUsersActivity"></activity>
+        <activity android:name=".WhatsAppChatActivity"></activity>
+        <activity android:name=".WhatsAppUsersActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUp">
             <intent-filter>
